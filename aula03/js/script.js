@@ -20,6 +20,7 @@ function corFundo2() {
   }
 }
 
+/*Atenção ao usar um código de vários testes de opção. Prefira "switch" ao invés de "if/else"*/
 function mudaCor() {
   if (document.forms[0].cor[0].checked) {
     //elementos de coleção + Roxo
@@ -38,5 +39,30 @@ function mudaCor() {
     document.bgColor = "#4A4A63";
   } else {
     alert("Escolha uma cor da lista abaixo, chapa! ☺");
+  }
+}
+
+function mudaCor2() {
+  console.log(document.forms[0].cor.value);
+  switch (document.forms[0].cor.value) {
+    case "Roxo":
+      document.bgColor = "#623070";
+      break;
+    case "Verde":
+      document.bgColor = "#498D5A";
+      break;
+    case "Cinza":
+      document.bgColor = "#C4C4C4";
+      break;
+    case "Azul":
+      document.bgColor = "#6299F5";
+      break;
+    case "Chumbo":
+      document.bgColor = "#4A4A63";
+      break;
+
+    default:
+      alert("Escolha uma cor da lista abaixo, chapa! ☺");
+      break;
   }
 }
