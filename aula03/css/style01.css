@@ -1,4 +1,10 @@
 @import url("https://fonts.googleapis.com/css?family=Merriweather&display=swap");
+
+* {
+  font-family: "Merriweather";
+  font-size: 1.2em;
+}
 h1 {
   font-family: "Merriweather", sans-serif;
+  font-size: 3em;
 }

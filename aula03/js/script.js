@@ -24,21 +24,19 @@ function mudaCor() {
   if (document.forms[0].cor[0].checked) {
     //elementos de coleção + Roxo
     document.bgColor = "#623070";
-  }
-  if (document.forms[1].cor[1].checked) {
+  } else if (document.forms[0].cor[1].checked) {
     //elementos de coleção + Verde
     document.bgColor = "#498D5A";
-  }
-  if (document.forms[2].cor[2].checked) {
+  } else if (document.forms[0].cor[2].checked) {
     //elementos de coleção + Cinza
     document.bgColor = "#C4C4C4";
-  }
-  if (document.forms[3].cor[3].checked) {
+  } else if (document.forms[0].cor[3].checked) {
     //elementos de coleção + Azul
     document.bgColor = "#6299F5";
-  }
-  if (document.forms[0].cor[0].checked) {
+  } else if (document.forms[0].cor[4].checked) {
     //elementos de coleção + Chumbo
     document.bgColor = "#4A4A63";
+  } else {
+    alert("Escolha uma cor da lista abaixo, chapa! ☺");
   }
 }
