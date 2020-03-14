@@ -27,3 +27,6 @@ git add . (coloca os arquivos)
 git commit -m "Situação" (indica um passo do processo feito)
 Versionado.
 */
+
+/*Enviar algo começado
+git push -u origin master*/
