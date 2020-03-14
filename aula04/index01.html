@@ -8,6 +8,11 @@
     <script src="js/script01.js"></script>
   </head>
   <body>
-    <button onclick="par()">Execute-me!</button>
+    <form action="" onsubmit="return false">
+      <input type="text" name="nome" id="nome" placeholder="Nome" />
+      <input type="email" name="email" id="email" placeholder="E-mail" />
+      <input type="text" name="cpf" id="cpf" placeholder="xxx.xxx.xxx-xx" />
+      <input type="submit" value="Enviar!" onclick="calculaCpf()    " />
+    </form>
   </body>
 </html>
